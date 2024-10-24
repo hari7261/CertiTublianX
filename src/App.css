@@ -1,0 +1,173 @@
+/* App.css */
+.container {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s;
+  width: 100%;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.certificate-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.button-container {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.button-container button {
+  flex: 1;
+}
+
+.certificate {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  padding: 40px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.certificate::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+              linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%);
+  background-size: 60px 60px;
+  opacity: 0.1;
+}
+
+.certificate-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+}
+
+.certificate h1 {
+  font-size: 36px;
+  color: #4facfe;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 40px;
+}
+
+.recipient-text {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+
+.recipient-name {
+  font-size: 48px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #00f2fe 0%, #4facfe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 40px;
+}
+
+.certificate-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.date-section,
+.certificate-id-section {
+  text-align: center;
+}
+
+.date-section p,
+.certificate-id-section p {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 5px;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  
+  .container {
+    padding: 0;
+    background: none;
+  }
+  
+  .certificate {
+    border: none;
+    box-shadow: none;
+  }
+}
