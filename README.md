@@ -17,6 +17,9 @@ A React-based automated certificate generator developed by the TublianX web deve
 - npm (v6.0.0 or higher)
 - Modern web browser with JavaScript enabled
 
+![image](https://github.com/user-attachments/assets/1acc6e16-c23d-44ef-8469-ad2d28525005)
+
+
 ## 🛠️ Installation
 
 1. Clone the repository:
